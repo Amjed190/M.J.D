@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+    <title>AI Integration</title>
+</head>
+<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+
+
+    <!-- الشريط العلوي -->
+    <header>
+        <nav>
+            <ul>
+                <li><a data-target="#home" class="nav-link">Home</a></li>
+                <li><a data-target="#services" class="nav-link">Services</a></li>
+                <li><a data-target="#videos" class="nav-link">Videos</a></li>
+                <li><a data-target="#reviews" class="nav-link">Contect</a></li>
+                <li><a href="#" id="ai-link">AI</a></li><!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+              <img src="r.png" alt="وصف الصورة" class="custom-image">
+            </body>
+            </html>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الأقسام -->
+    <section id="home">
+        <h1 id="q">Learn programmer with {M.J.D}</h1>
+        <!--من هنا البداية(النص)-->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #typingText {
+            font-size: 29px;
+            font-weight: bold;
+            color: #333;
+            white-space: pre-wrap; /* لتجنب دمج الأسطر */
+            text-align: left;
+            color: rgb(255, 0, 0);
+
+        }
+    </style>
+</head>
+<body>
+    <div id="typingText"></div>
+
+    <script>
+        // النص الذي تريد عرضه
+        const textToType = `Welcome to this website! Whether you're a programmer, looking to learn programming, or even a professional, you're in the right place. This site has been designed by expert programmers and features an easy-to-use, intuitive interface that won't take you long to get familiar with. Here, we place a strong emphasis on beginner programmers because every beginner faces challenges in finding solutions and fixing the problems they encounter. Additionally, there’s a video section where you can easily learn, and there will also be a companion AI-powered platform to simplify your work. However, for beginners, using AI is not recommended at all. The reason is that if you rely on AI to write code, you'll end up using ready-made solutions without understanding how to write code yourself. Even if you manage to complete an entire project using AI, you won’t truly understand your own work. More importantly, if you encounter any errors, you won’t be able to resolve them because you lack a solid foundation in programming. To start, focus on creating something simple and learning through videos. Don’t dive into your big project right away. First, learn, then master, and only then create what you want. This is just an introduction. Now, scroll down to explore the full potential of this website and continue your journey!"`;
+
+        // العنصر الذي سيظهر فيه النص
+        const typingTextElement = document.getElementById("typingText");
+
+        // المؤشر للمتابعة في النص
+        let currentCharIndex = 0;
+
+        // سرعة الكتابة (بالملي ثانية)
+        const typingSpeed = 20;
+
+        // دالة لكتابة النص حرفًا بحرف
+        function typeText() {
+            if (currentCharIndex < textToType.length) {
+                typingTextElement.textContent += textToType[currentCharIndex];
+                currentCharIndex++;
+                setTimeout(typeText, typingSpeed); // استدعاء الدالة مرة أخرى
+            }
+        }
+
+        // بدء الكتابة
+        typeText();
+    </script>
+</body>
+</html>
+<!--النهاية -->
+
+</section>
+
+
+
+    <section id="services">
+        <h1>الخدمات</h1>
+        <p>استكشف خدماتنا المميزة!</p>
+    </section>
+
+    <section id="videos">
+        <h1>الفيديوهات</h1>
+        <p>شاهد أحدث الفيديوهات لدينا.</p>
+    </section>
+
+    <section id="reviews">
+        <h1>التقييم</h1>
+        <p>اطلع على آراء عملائنا.</p>
+
+        <!--من هناالصور البرمجية-->
+        <div class="slider-container" id="sliderContainer">
+            <div class="slider-images" id="slider">
+                <img src="file-8qKLbb1QcGRr5k4CFTUjkr.webp" alt="Image 1">
+                <img src="w.jpeg" alt="Image 2">
+                <img src="e.jpeg" alt="Image 3">
+                <img src="t.webp" alt="Image 4">
+                <img src="z.png" alt="Image 5">
+            </div>
+            <button class="slider-button left" onclick="manualSlide(-1)">&#8249;</button>
+            <button class="slider-button right" onclick="manualSlide(1)">&#8250;</button>
+            <div class="dots-container" id="dots">
+                <div class="dot active" onclick="manualGoToSlide(0)"></div>
+                <div class="dot" onclick="manualGoToSlide(1)"></div>
+                <div class="dot" onclick="manualGoToSlide(2)"></div>
+                <div class="dot" onclick="manualGoToSlide(3)"></div>
+                <div class="dot" onclick="manualGoToSlide(4)"></div>
+            </div>
+        </div>
+        <!--الى هنا الصور البرمجية-->
+
+        <!--من هنا الصور الاخرى-->
+
+        <div class="slider-container-alt" id="sliderContainerAlt">
+            <div class="slider-images-alt" id="sliderAlt">
+                <img src="InShot_٢٠٢٤١٢٢٧_١٦١٧٠٥٨٨٠.jpg" alt="Image 1">
+                <img src="InShot_٢٠٢٤١٢٢٧_١٨١٠١١٠٧٧.jpg" alt="Image 2">
+                <img src="InShot_٢٠٢٤١٢٢٧_١٨١٣١٩٦٦٣.jpg" alt="Image 3">
+                <img src="InShot_٢٠٢٤١٢٢٧_١٨١٦١٦٦٨٤.jpg" alt="Image 4">
+                <img src="InShot_٢٠٢٤١٢٢٧_١٨١٨٥٢١١١.jpg" alt="Image 5">
+            </div>
+            <button class="slider-button-alt left" onclick="manualSlideAlt(-1)">&#8249;</button>
+            <button class="slider-button-alt right" onclick="manualSlideAlt(1)">&#8250;</button>
+            <div class="dots-container-alt" id="dotsAlt">
+                <div class="dot-alt active" onclick="manualGoToSlideAlt(0)"></div>
+                <div class="dot-alt" onclick="manualGoToSlideAlt(1)"></div>
+                <div class="dot-alt" onclick="manualGoToSlideAlt(2)"></div>
+                <div class="dot-alt" onclick="manualGoToSlideAlt(3)"></div>
+                <div class="dot-alt" onclick="manualGoToSlideAlt(4)"></div>
+            </div>
+        </div>
+
+        <!--الى هنا الصور الاخرى-->
+
+
+    </section>
+
+    <!--قائمة الواي البداية-->
+    <SECtion id="finish">
+        <div id="ymenu">
+            <h1 id="h1">Services</h1>
+            <h1 id="h1">Company</h1>
+            <h1 id="h1">sections</h1>
+            <h1 id="h1">Features</h1>
+            <H1 id="h1">Community</H1>
+    
+    </div>
+
+
+ 
+    </SECtion>
+
+<!--قائمة الواي النهاية-->
+
+    <!-- صفحة الذكاء الاصطناعي -->
+    <section id="ai-page">
+        <iframe src="https://muad.io"></iframe>
+    </section>
+    
+
+    
+       <script src="script.js"></script>
+
+</body>
+</html>
+
+
